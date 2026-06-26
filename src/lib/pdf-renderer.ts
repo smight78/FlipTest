@@ -1,7 +1,7 @@
 import * as pdfjsLib from "pdfjs-dist";
 
 if (typeof window !== "undefined") {
-  pdfjsLib.GlobalWorkerOptions.workerSrc = "/pdf.worker.min.mjs";
+    pdfjsLib.GlobalWorkerOptions.workerSrc = new URL("pdf.worker.min.mjs", window.location.href).href;
 }
 
 export interface PDFPageImage {
