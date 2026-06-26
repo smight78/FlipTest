@@ -1,2 +1,0 @@
-# FlipTest
-FlipTest
